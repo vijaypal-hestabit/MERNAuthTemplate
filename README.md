@@ -67,6 +67,11 @@ Contains the backend application using Node.js and Express.
    JWT_SECRET_EXPIRE=1d # like "1h", "30m", "2d"
    ```
 
+   Create a .env file in the client directory with the following example configuration:
+   ```bash
+   REACT_APP_API_URL=http://localhost:5000/api
+   ```
+
 4. **Start the application:**
     
    - **For development:**
@@ -98,7 +103,7 @@ Contains the backend application using Node.js and Express.
 ## Usage
 
 - **Frontend**: Navigate to [http://localhost:3000](http://localhost:3000) to access the React frontend.
-- **Backend**: The API will be available at **http://localhost:5000** (or your configured port).
+- **Backend**: The API will be available at http://localhost:5000 (or your configured port).
 
 ## Contributing
 
