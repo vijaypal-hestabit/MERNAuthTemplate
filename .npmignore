@@ -1,5 +1,8 @@
+.git/
 node_modules/
-client/build/
-server/logs/
 *.log
-.env
+*.md
+client/node_modules/
+server/node_modules/
+server/.env
+client/.env

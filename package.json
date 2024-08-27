@@ -1,5 +1,5 @@
 {
-	"name": "MERNAuthTemplate",
+	"name": "mern-auth-template",
 	"version": "1.0.0",
 	"description": "A MERN stack authentication template with login, signup, reset, and forgot password features.",
 	"main": "server/server.js",
@@ -19,5 +19,17 @@
 	"license": "MIT",
 	"dependencies": {
 		"concurrently": "^8.2.2"
-	}
+	},
+	"files": [
+		"client/",
+		"server/"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vijaypal-hestabit/MERNAuthTemplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/vijaypal-hestabit/MERNAuthTemplate/issues"
+	},
+	"homepage": "https://github.com/vijaypal-hestabit/MERNAuthTemplate#readme"
 }
