@@ -1,0 +1,7 @@
+node_modules/
+client/build/
+server/logs/
+*.log
+.env
+.vscode/
+.idea/

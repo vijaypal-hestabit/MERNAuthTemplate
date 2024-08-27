@@ -1,0 +1,23 @@
+{
+	"name": "MERNAuthTemplate",
+	"version": "1.0.0",
+	"description": "A MERN stack authentication template with login, signup, reset, and forgot password features.",
+	"main": "server/server.js",
+	"scripts": {
+		"start": "node server/server.js",
+		"start:client": "npm --prefix client start",
+		"start:server": "npm --prefix server start",
+		"start:server:dev": "npm --prefix server run dev",
+		"start:dev": "concurrently \"npm run start:server:dev\" \"npm run start:client\"",
+		"start:prod": "concurrently \"npm run start:server\" \"npm run start:client\"",
+		"install:client": "npm --prefix client install",
+		"install:server": "npm --prefix server install",
+		"install": "concurrently \"npm install\" \"npm run install:client\" \"npm run install:server\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Vijay Pal Gautam",
+	"license": "MIT",
+	"dependencies": {
+		"concurrently": "^8.2.2"
+	}
+}

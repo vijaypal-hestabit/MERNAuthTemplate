@@ -1,0 +1,160 @@
+@import '../styles/_variables';
+
+.auth-container {
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image-container {
+        display: none;
+        width: 50%;
+        height: 100%;
+        background-color: $tertiary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .lottie {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .form-container {
+        padding: 2rem;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        .form-wrapper {
+            max-width: 500px;
+
+            .title {
+                color: $primary-color;
+                margin-bottom: 1rem;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .subtitle {
+                color: $text-color;
+                margin-bottom: 1.5rem;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+
+            form {
+                .form-group {
+                    margin-bottom: 1rem;
+
+                    label {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        font-weight: bold;
+                        color: $text-color;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 0.75rem;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 1rem;
+                        box-sizing: border-box;
+                        color: $text-color;
+
+                        &::placeholder {
+                            color: #888;
+                        }
+                    }
+
+                    .password-input-container {
+                        position: relative;
+
+                        input {
+                            width: 100%;
+                            padding: 0.75rem;
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            font-size: 1rem;
+                            box-sizing: border-box;
+                            color: $text-color;
+
+                            &::placeholder {
+                                color: #888;
+                            }
+                        }
+
+                        .eye-button {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border: none;
+                            background: none;
+                            cursor: pointer;
+                            color: #888;
+                        }
+                    }
+                }
+
+                .submit-button {
+                    background-color: $primary-color;
+                    color: #fff;
+                    padding: 0.75rem;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: darken($primary-color, 10%);
+                    }
+
+                    &:disabled {
+                        background-color: #ccc;
+                        cursor: not-allowed;
+                    }
+                }
+
+                .link-group {
+                    margin-top: 1rem;
+                    text-align: center;
+
+                    a {
+                        color: $secondary-color;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &.error-message {
+                        color: $error-color;
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media (min-width: 768px) {
+        .image-container {
+            display: flex;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .form-container {
+            width: 90%;
+        }
+
+        .image-container {
+            display: none;
+        }
+    }
+}
